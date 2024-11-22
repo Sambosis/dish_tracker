@@ -1,0 +1,137 @@
+/* Help Center Styles */
+
+.help-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1rem;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.help-icon:hover {
+    opacity: 1;
+}
+
+.help-content {
+    height: 100%;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.help-content h5 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.help-content p {
+    color: #495057;
+    line-height: 1.6;
+}
+
+.help-content ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.help-content li {
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.help-content strong {
+    color: #333;
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 0.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    transform: translateX(5px);
+}
+
+.list-group-item.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.swal2-content {
+    font-size: 0.9rem;
+}
+
+.swal2-popup {
+    font-family: inherit;
+}
+
+.swal2-title {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Context Help Tooltips */
+[data-bs-toggle="tooltip"] {
+    cursor: help;
+}
+
+.tooltip {
+    font-family: inherit;
+    font-size: 0.875rem;
+}
+
+.tooltip-inner {
+    background-color: rgba(33, 37, 41, 0.9);
+    padding: 0.5rem 1rem;
+    max-width: 200px;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+/* Help Button in Navbar */
+.btn-outline-light.help-button {
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 0.375rem 0.75rem;
+}
+
+.btn-outline-light.help-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-outline-light.help-button i {
+    margin-right: 0.5rem;
+}
+
+/* Feature Help Icons */
+.feature-help {
+    position: relative;
+}
+
+.feature-help .help-icon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .help-content {
+        margin-top: 1rem;
+        border-top: 1px solid #dee2e6;
+        padding-top: 1rem;
+    }
+
+    .list-group-item {
+        padding: 0.5rem 1rem;
+    }
+
+    .help-icon {
+        font-size: 0.875rem;
+    }
+}
